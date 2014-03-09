@@ -104,14 +104,13 @@ def histmean(histo):
 
     return sum([v*c/float(sum(histo)) for v,c in zip(range(46),histo)])
 
-def main():
+def klackers(maxgames):
     '''Run Monte Carlo and write scores to a file'''
 
     choosers = [randchoice,mosttiles,leasttiles]
-    maxgames = 10000000
 
     for chooser in choosers:
         scores = montecarlo(chooser,maxgames)
         filename = './klackers-'+chooser.func_name+'-'+str(maxgames)+'-games.json'
         with open(filename,'wb') as f:
-            json.dump(scores,f)
+            json.dump(list(scores),f)
