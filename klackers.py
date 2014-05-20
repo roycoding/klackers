@@ -59,7 +59,7 @@ def mosttiles(sumsets):
     return tilecounts[0]
 
 def leasttiles(sumsets):
-    '''Chose tile set with least tiles.
+    '''Chose tile set with fewest tiles.
     leasttiles(list of sets) --> set'''
 
     # Number of tiles in each set, ascending order

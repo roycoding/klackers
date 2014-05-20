@@ -6,4 +6,6 @@ Klackers (a.k.a. Shut the Box) is a dice game, often played in bars. The Klacker
 
 This program is a Monte Carlo simulation, which I have written to determine the best simple strategy for Klackers.
 
+You can see a write-up of the results [here](https://gist.github.com/roycoding/6e4dc97ecba3edf5a6fb).
+
 License: BSD
